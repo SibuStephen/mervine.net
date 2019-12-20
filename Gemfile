@@ -1,36 +1,36 @@
 source 'http://rubygems.org'
 
 gem 'rake'
-gem 'nesta'
+gem 'nesta', '>= 0.9.13'
 
 gem 'ferret'
 gem 'mime-types'
 
-gem 'nesta-plugin-google-ads'
-gem 'nesta-plugin-sharethis'
-gem 'nesta-plugin-smartmeta'
+gem 'nesta-plugin-google-ads', '>= 0.0.1'
+gem 'nesta-plugin-sharethis', '>= 0.0.2'
+gem 'nesta-plugin-smartmeta', '>= 0.0.1'
 gem 'nesta-plugin-search'
 
 #gem 'nesta-plugin-diskcached'
 
 #gem 'coderay'
 gem "ultraviolet", :require => "uv"
-gem 'rack-codehighlighter', :require => 'rack/codehighlighter'
+gem 'rack-codehighlighter', '>= 0.5.0'
 gem 'htmlcompressor'
-gem 'unicorn'
+gem 'unicorn', '>= 4.6.2'
 
 group :production do
   gem 'newrelic_rpm', :require => false
-  gem 'rack-hard-copy'
-  gem 'netdnarws'
+  gem 'rack-hard-copy', '>= 0.0.3'
+  gem 'netdnarws', '>= 0.2.8'
 end
 
 group :test do
-  gem 'rack-test'
+  gem 'rack-test', '>= 0.6.2'
 end
 
 group :development do
-  gem 'shotgun'
+  gem 'shotgun', '>= 0.9'
   gem 'pry'
   gem 'pry-doc'
 end
