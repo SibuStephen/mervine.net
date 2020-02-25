@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rake'
+gem 'rake', '>= 12.3.3'
 gem 'nesta'
 
 gem 'ferret'
