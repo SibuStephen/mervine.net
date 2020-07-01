@@ -1,14 +1,14 @@
 source 'http://rubygems.org'
 
 gem 'rake'
-gem 'nesta'
+gem 'nesta', '>= 0.12.0'
 
 gem 'ferret'
 gem 'mime-types'
 
-gem 'nesta-plugin-google-ads'
-gem 'nesta-plugin-sharethis'
-gem 'nesta-plugin-smartmeta'
+gem 'nesta-plugin-google-ads', '>= 0.0.1'
+gem 'nesta-plugin-sharethis', '>= 0.0.2'
+gem 'nesta-plugin-smartmeta', '>= 0.0.1'
 gem 'nesta-plugin-search'
 
 #gem 'nesta-plugin-diskcached'
