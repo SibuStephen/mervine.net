@@ -6,25 +6,40 @@ GEM
       open4
     Platform (0.4.0)
     RedCloth (4.2.9)
-    addressable (2.3.5)
+    addressable (2.8.0)
+      public_suffix (>= 2.0.2, < 5.0)
     coderay (1.0.9)
-    curb (0.8.5)
+    curb (0.9.11)
     curb-fu (0.6.2)
       curb (>= 0.5.4.0)
       rack-test (>= 0.2.0)
-    faraday (0.9.0.rc5)
-      multipart-post (~> 1.1)
+    faraday (1.5.0)
+      faraday-em_http (~> 1.0)
+      faraday-em_synchrony (~> 1.0)
+      faraday-excon (~> 1.1)
+      faraday-httpclient (~> 1.0.1)
+      faraday-net_http (~> 1.0)
+      faraday-net_http_persistent (~> 1.1)
+      faraday-patron (~> 1.0)
+      multipart-post (>= 1.2, < 3)
+      ruby2_keywords (>= 0.0.4)
+    faraday-em_http (1.0.0)
+    faraday-em_synchrony (1.0.0)
+    faraday-excon (1.1.0)
+    faraday-httpclient (1.0.1)
+    faraday-net_http (1.0.1)
+    faraday-net_http_persistent (1.1.0)
+    faraday-patron (1.0.0)
     ferret (0.11.8.5)
     haml (3.1.8)
     htmlcompressor (0.0.7)
       yui-compressor (~> 0.9.6)
-    jwt (0.1.8)
-      multi_json (>= 1.5)
+    jwt (2.2.3)
     kgio (2.8.0)
     method_source (0.8.1)
     mime-types (1.23)
-    multi_json (1.8.2)
-    multipart-post (1.2.0)
+    multi_json (1.15.0)
+    multipart-post (2.1.1)
     nesta (0.9.13)
       RedCloth (~> 4.2)
       haml (~> 3.1)
@@ -41,8 +56,7 @@ GEM
       nesta (>= 0.9.11)
     nesta-plugin-smartmeta (0.0.1)
       nesta (>= 0.9.11)
-    netdnarws (0.2.8)
-      addressable
+    netdnarws (0.3.4)
       curb-fu
       signet
     newrelic_rpm (3.6.1.87)
@@ -56,7 +70,8 @@ GEM
     pry-doc (0.4.5)
       pry (>= 0.9)
       yard (>= 0.8)
-    rack (1.5.2)
+    public_suffix (4.0.6)
+    rack (1.6.13)
     rack-codehighlighter (0.5.0)
       nokogiri (>= 1.4.1)
       rack (>= 1.0.0)
@@ -65,19 +80,20 @@ GEM
       rack (>= 1.5.2)
     rack-protection (1.5.0)
       rack
-    rack-test (0.6.2)
-      rack (>= 1.0)
+    rack-test (1.1.0)
+      rack (>= 1.0, < 3)
     raindrops (0.11.0)
     rake (10.0.4)
     rdiscount (1.6.8)
+    ruby2_keywords (0.0.4)
     sass (3.2.12)
     shotgun (0.9)
       rack (>= 1.0)
-    signet (0.5.0)
-      addressable (>= 2.2.3)
-      faraday (>= 0.9.0.rc5)
-      jwt (>= 0.1.5)
-      multi_json (>= 1.0.0)
+    signet (0.15.0)
+      addressable (~> 2.3)
+      faraday (>= 0.17.3, < 2.0)
+      jwt (>= 1.5, < 3.0)
+      multi_json (~> 1.10)
     sinatra (1.4.3)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -108,7 +124,7 @@ DEPENDENCIES
   nesta-plugin-search
   nesta-plugin-sharethis
   nesta-plugin-smartmeta
-  netdnarws
+  netdnarws (>= 0.2.8)
   newrelic_rpm
   pry
   pry-doc
@@ -119,3 +135,6 @@ DEPENDENCIES
   shotgun
   ultraviolet
   unicorn
+
+BUNDLED WITH
+   2.1.4
