@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rake'
-gem 'nesta'
+gem 'nesta', '>= 0.17.0'
 
 gem 'ferret'
 gem 'mime-types'
