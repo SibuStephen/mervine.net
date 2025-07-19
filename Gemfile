@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rake'
-gem 'nesta'
+gem 'nesta', '>= 0.17.0'
 
 gem 'ferret'
 gem 'mime-types'
@@ -15,23 +15,23 @@ gem 'nesta-plugin-search'
 
 #gem 'coderay'
 gem "ultraviolet", :require => "uv"
-gem 'rack-codehighlighter', :require => 'rack/codehighlighter'
+gem 'rack-codehighlighter', '>= 0.5.1', :require => 'rack/codehighlighter'
 gem 'htmlcompressor'
 gem 'unicorn'
 
 group :production do
   gem 'newrelic_rpm', :require => false
   gem 'rack-hard-copy'
-  gem 'netdnarws'
+  gem 'netdnarws', '>= 0.3.0'
 end
 
 group :test do
-  gem 'rack-test'
+  gem 'rack-test', '>= 0.6.3'
 end
 
 group :development do
-  gem 'shotgun'
+  gem 'shotgun', '>= 0.9.1'
   gem 'pry'
-  gem 'pry-doc'
+  gem 'pry-doc', '>= 0.4.6'
 end
 # gem (RUBY_VERSION =~ /^1.9/) ? 'ruby-debug19': 'ruby-debug'
